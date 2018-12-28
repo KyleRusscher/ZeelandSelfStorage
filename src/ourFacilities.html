@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zeeland Self Storage | Secure Storage | Zeeland, MI</title>
+	<link rel="stylesheet" type="text/css" href="css/ourFacilities.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<link rel="shortcut icon" href="https://s3.amazonaws.com/zeelandselfstorage.com/Images/zssicon.ico"/>
+</head>
+	<body>
+		<div class="dbg"></div>
+		<div id="menushow">
+			<span id="X" onclick="off()">&#10008;</span>
+			<a style="text-decoration: none;"href="index.html"><div class="red">Home</div></a>
+			<a style="text-decoration: none;"href="ourFacilities.html"><div class="orange">Our Facilities</div></a>
+			<a style="text-decoration: none;"href="unitSize.html"><div class="green">Unit Sizes</div></a>
+			<a style="text-decoration: none;"href="vehicleStorage.html"><div class="purple">Vehicle Storage</div></a>
+			<a style="text-decoration: none;"href="contact.html"><div class="red">Contact Us</div></a>
+
+		</div>
+		<div class="head">
+			<nav id="nav">
+				<a href="index.html"><img id="logo" src="Images/Zss.png" alt="Smiley face" height="60" width="200"></a>
+				<span id="right">
+					<input type="button" name="menu" value="Menu" onclick="menu()">
+				<a class="orange" href="ourFacilities.html">Our Facilities</a> 
+				<a class="green" href="unitSize.html">Unit Sizes</a> 
+				<a class="purple" href="vehicleStorage.html">Vehicle Storage</a> 
+				<a class="red" href="contact.html">Contact Us</a>
+			</span>
+			</nav>
+	</div>
+		<section class="section">
+			<div class="summary">
+				<div id=flex-words>
+					<h1>Inside Zeeland Self Storage</h1>
+					<p>ZSS offers clean, secure, and affordable self storage to its customers. Take a look at what our facilities can offer</p>
+				</div>
+			</div>
+			<div class='box-container'>
+				<div class="box">
+					<img class="corner-left" src="Images/corner.png" height="100px" width="100px">
+					<div class="text-align">
+					<h1>Security</h1>
+					<h3>"Very up to date, clean and secure facilities" -Kyle</h3>
+					<ul>
+						<li>Property is monitored 24/7 by security cameras</li>
+						<li>Fully gated grounds</li>
+					</ul>	
+				</div>	
+				</div>
+				<div id="one" class="box1"></div>
+			</div>
+			<div class='box-container'>
+				<div id="two" class="box1"></div>
+				<div class="box">
+					<img class="corner" src="Images/corner-right.png" width="100px">
+					<div class="text-align">
+					<h1>Convenience</h1>
+					<h3>"Excellent communication with management" -Eric</h3>
+					<ul>
+						<li>24/7 automatic gate access</li>
+						<li>Auto pay available</li>
+						<li>Located near downtown Zeeland</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+			<div class='box-container'>
+				<div class="box">
+					<img class="corner-left" src="Images/corner.png" height="100px" width="100px">
+					<div class="text-align">
+					<h1>Customer Focused</h1>
+					<h3>"Family run organization that really cares about its customers!" -Derek</h3>
+					<ul>
+						<li>5 star rating on google reviews</li>
+						<li>Open contact with employees if problems arise</li>
+					</ul>
+				</div>					
+				</div>
+				<div id="three" class="box1"></div>
+			</div>
+			<div id="directions">
+				<input id="dInput" type="text" name="somethingcompletelyrandom" placeholder="Enter Your Address / Location">
+				<input id="dButton" type="submit" name="directions" value="Get Directions!" onclick="location.href=`http://maps.google.com/maps?saddr=”${dInput.value}”&daddr=”231 N Centennial St, Zeeland, MI 49464”`">
+			</div>
+				<div id="contact">
+					
+  					<span id="info">
+  						<span>231 N Centennial St, Zeeland, MI 49464</span>
+  						<span>(616) 239-1234</span>
+  						<span>ZeelandSelfStorage@charter.net</span>
+  						<span>Open 24 hours a day, 7 days a week</span>
+  					</span>
+  					 <div id="map"></div>
+				</div>
+				<div id="footer">
+					<p>	&#169; Zeeland Self Storage - Storage Facility | Zeeland, MI</p>
+				</div>
+			</div>
+		</section>
+		
+	<script src="js/reviews.js"></script>
+	<script type="text/javascript" src="js/dbg.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChqZWCFqaFTVVOMd2ads09uETF0MK4RSY&callback=initMap">
+    </script>
+</body>
+
+
+</html>

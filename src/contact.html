@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zeeland Self Storage | Secure Storage | Zeeland, MI</title>
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="shortcut icon" href="Images/zssicon.ico"/>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  
+</head>
+	<body>
+		<div class="dbg"></div>
+		<div id="menushow">
+			<span id="X" onclick="off()">&#10008;</span>
+			<a style="text-decoration: none;"href="index.html"><div class="red">Home</div></a>
+			<a style="text-decoration: none;"href="ourFacilities.html"><div class="orange">Our Facilities</div></a>
+			<a style="text-decoration: none;"href="unitSize.html"><div class="green">Unit Sizes</div></a>
+			<a style="text-decoration: none;"href="vehicleStorage.html"><div class="purple">Vehicle Storage</div></a>
+			<a style="text-decoration: none;"href="contact.html"><div class="red">Contact Us</div></a>
+
+		</div>
+		<div class="head">
+			<nav id="nav" >
+				<a href="index.html"><img id="logo" src="Images/Zss.png" alt="Smiley face" height="60" width="200"></a>
+				<span id="right">
+					<input type="button" name="menu" value="Menu" onclick="menu()">
+				<a class="orange" href="ourFacilities.html">Our Facilities</a> 
+				<a class="green"  href="unitSize.html">Unit Sizes</a> 
+				<a class="purple" href="vehicleStorage.html">Vehicle Storage</a> 
+				<a class="red"    href="contact.html">Contact Us</a>
+			</span>
+			</nav>
+		</div>
+		
+		<div id="flex-contact">
+			<div id="contact-center">
+				<form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
+ 			 action="https://script.google.com/macros/s/AKfycby-q0JsA0oxDVP25I489Su-T4y-MDowo7H2DFonab6Hpf6E88E/exec">
+			<h1 id="letsTalk">Let's Talk!</h1>
+			<p id="talkP">To get a jump-start on our conversation, please fill out the questionnaire below. It only takes a few minutes, and will ensure that you are contacted by just the right person. Thanks, and talk to you soon.</p><br>
+
+
+			 <label class="sr-only"></label>
+  <input id="honeypot" type="text" name="honeypot" value="" />
+
+
+	<fieldset class="pure-group">
+      <label for="name">Name: </label>
+      <input class="normalInput" id="name" name="name"/>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="email">Email:</label>
+      <input class="normalInput" id="email" name="email" type="email" value=""
+      required />
+      <span id="email-invalid" style="display:none">
+        Must be a valid email address</span>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="Phone Number">Phone: </label>
+      <input class="normalInput" id="color" name="phone"/>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="message">Message: </label>
+      <textarea class="normalInput" id="message" name="message" rows="10"></textarea>
+    </fieldset>
+
+    <button class="button-success pure-button button-xlarge">
+      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+  </form>
+
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em> for contacting us!
+      We will get back to you soon!</h2>
+  </div>
+			</div>
+			<div id="find-us">
+				
+				<h4><u>Address</u></h4>
+				<p>231 N Centennial St</p>
+				<p>Zeeland MI, 49464</p>
+				<h4><u>Phone Number</u></h4>
+				<p>(616) 239-1234</p>
+				<h4><u>Email</u></h4>
+				<p><u style="color:red">ZeelandSelfStorage@charter.net</u></p>
+				<br><br>
+				<h4><u>We Accept</u></h4>
+				<div>
+				<img src="Images/visa.jpg">
+				<img src="Images/masterCard.jpg">
+				<img src="Images/americanExpress.png"><br>
+				<img src="Images/discover.png">
+				<img src="Images/cash.jpg">
+				<img src="Images/check.jpg">
+			</div>
+			</div>
+		</div>
+		
+			<div id="directions">
+				<input id="dInput" type="text" name="somethingcompletelyrandom" placeholder="Enter Your Address / Location">
+				<input id="dButton" type="submit" name="directions" value="Get Directions!" onclick="location.href=`http://maps.google.com/maps?saddr=”${dInput.value}”&daddr=”231 N Centennial St, Zeeland, MI 49464”`">
+			</div>
+				<div id="contact">
+					
+  					<span id="info">
+  						<span>231 N Centennial St, Zeeland, MI 49464</span>
+  						<span>(616) 239-1234</span>
+  						<span>ZeelandSelfStorage@charter.net</span>
+  						<span>Open 24 hours a day, 7 days a week</span>
+  					</span>
+  					 <div id="map"></div>
+				</div>
+				<div id="footer">
+					<p>	&#169; Zeeland Self Storage - Storage Facility | Zeeland, MI</p>
+				</div>
+			</div>
+		</section>
+		
+	<script src="js/reviews.js"></script>
+	
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChqZWCFqaFTVVOMd2ads09uETF0MK4RSY&callback=initMap">
+    </script>
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+    <script type="text/javascript" src="js/dbg.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Zeeland Self Storage | Secure Storage | Zeeland, MI</title>
+	<link rel="stylesheet" type="text/css" href="css/vehicleStorage.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	 crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="shortcut icon" href="Images/zssicon.ico"/>
+</head>
+
+<body>
+	<div class="dbg"></div>
+	<div id="menushow">
+		<span id="X" onclick="off()">X</span>
+		<a style="text-decoration: none;" href="index.html">
+			<div class="red">Home</div>
+		</a>
+		<a style="text-decoration: none;" href="ourFacilities.html">
+			<div class="orange">Our Facilities</div>
+		</a>
+		<a style="text-decoration: none;" href="unitSize.html">
+			<div class="green">Unit Sizes</div>
+		</a>
+		<a style="text-decoration: none;" href="vehicleStorage.html">
+			<div class="purple">Vehicle Storage</div>
+		</a>
+		<a style="text-decoration: none;" href="contact.html">
+			<div class="red">Contact Us</div>
+		</a>
+
+	</div>
+	<div class="head">
+		<nav id="nav">
+			<a href="index.html">
+				<img id="logo" src="Images/Zss.png" alt="Smiley face"
+				 height="60" width="200">
+			</a>
+			<span id="right">
+				<input type="button" name="menu" value="Menu" onclick="menu()">
+				<a class="orange" href="ourFacilities.html">Our Facilities</a>
+				<a class="green" href="unitSize.html">Unit Sizes</a>
+				<a class="purple" href="vehicleStorage.html">Vehicle Storage</a>
+				<a class="red" href="contact.html">Contact Us</a>
+			</span>
+		</nav>
+	</div>
+	<section class="section">
+		<div class="summary">
+			<div id=flex-words>
+				<h1>Vehicle Storage</h1>
+				<p>Listed below are some common vehicles along with what units can hold them. </p>
+			</div>
+		</div>
+		<div class="vehicle-backgorund">
+			<div class="vehicle-box">
+				<div class="vehicle-options">
+					<div id="1" class="active realdbg">
+						<i  class="fas fa-motorcycle" style="font-size:60px;color:#888888;"></i>
+					</div>
+					<div id="2">
+						<i class="fas fa-car" style="font-size:60px;color:#888888;"></i>
+					</div>
+					<div id="4">
+						<img src="Images/greyBoat.png" alt="Smiley face" height="100px" width="150px">
+					</div>
+					<div id="3">
+						<i class="fas fa-bus" id="twoCar" style="font-size:60px;color:#888888;"></i>
+					</div>
+					
+				</div>
+				<div class="vehicle-descriptions">
+					<div class="vd-box">
+						<h1 class="vd-type">Motorcycle Storage</h1>
+						<h2 class="vd-description">All sizes of motorcycle will fit in 10x10+. Some smaller motorcycles may fit in a 5x5</h2>
+					</div>
+					<div class="vehicle-sizes">
+						<div id="vs1" class="non-applicable">
+							5x10
+						</div>
+						<div id="vs2">
+							10x10
+						</div>
+						<div id="vs3">
+							10x15
+						</div>
+						<div id="vs4">
+							10x20
+						</div>
+						<div id="vs5">
+							10x25
+						</div>
+						<div id="vs6">
+							10x30
+						</div>
+						<div id="vs7">
+							14x22
+						</div>
+						<div id="vs8">
+							15x30
+						</div>
+						<div id="vs9">
+							15x35
+						</div>
+						<div id="vs10">
+							15x40
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="directions">
+				<input id="dInput" type="text" name="somethingcompletelyrandom" placeholder="Enter Your Address / Location">
+				<input id="dButton" type="submit" name="directions" value="Get Directions!" onclick="location.href=`http://maps.google.com/maps?saddr=”${dInput.value}”&daddr=”231 N Centennial St, Zeeland, MI 49464”`">
+			</div>
+				<div id="contact">
+					
+  					<span id="info">
+  						<span>231 N Centennial St, Zeeland, MI 49464</span>
+  						<span>(616) 239-1234</span>
+  						<span>ZeelandSelfStorage@charter.net</span>
+  						<span>Open 24 hours a day, 7 days a week</span>
+  					</span>
+  					 <div id="map"></div>
+				</div>
+				<div id="footer">
+					<p>	&#169; Zeeland Self Storage - Storage Facility | Zeeland, MI</p>
+					<div id="dbg" onclick="dbg()"></div>
+				</div>
+			</div>
+
+	</section>
+	<script src="js/vs.js"></script>
+		<script>
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 42.817454, lng: -86.011161};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 13, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChqZWCFqaFTVVOMd2ads09uETF0MK4RSY&callback=initMap">
+    </script>
+    <script type="text/javascript" src="js/dbg.js"></script>
+</body>
+
+
+</html>

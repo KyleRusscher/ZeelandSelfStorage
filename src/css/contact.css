@@ -1,0 +1,401 @@
+
+* {
+	font-family: lato, sans-serif;
+	color: rgb(102, 102, 102);
+}
+
+::selection {
+  background: silver; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: silver; /* Gecko Browsers */
+}
+
+body {
+	margin: 0;
+}
+
+.head {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	background-color: rgba(255,255,255, .94);
+	height: 75px;
+	z-index: 98;
+}
+
+#nav {
+	margin: auto;
+	width: 55%;
+	min-width: 1000px;
+	z-index: 99;
+}
+
+#logo {
+	padding: 10px;
+
+}
+.dbg {
+	display: none;
+	position: absolute;
+	width: 100vw;
+	height: 300%;
+	z-index: 30;
+	background-image: url("../Images/dbg.png");
+ 	background-size: 800px ;
+ 	background-position: center;
+}
+
+#right {
+	float: right;
+}
+
+span a {
+	padding: 20px;
+	text-decoration: none;
+	color: gray;
+	padding: 22px;
+	font-size: 20px;
+	position: relative;
+	top: 25px;
+}
+
+.orange:hover {
+	color: #ffaa21;
+}
+.green:hover {
+	color: #74ab85;
+}
+.purple:hover {
+	color: #8466c2;
+}
+.red:hover {
+	color: #db332f;
+}
+
+#contact-center h1 {
+	color: rgb(51, 51, 51);
+	margin-bottom: 25px;
+	font-weight: normal;
+	font-size: 40px;
+	opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 500ms, transform 1000ms;
+}
+
+#honeypot {
+  display: none; 
+}
+
+#contact-center p {
+	color: rgb(102, 102, 102);
+    line-height: 35px;
+    font-size: 20px;
+    width: 690px;
+    margin-bottom: 0px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 500ms, transform 1300ms;
+}
+.pure-group {
+	opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 600ms, transform 1000ms;
+}
+.pure-button {
+	padding: 12px !important;
+	padding-left:40px !important;
+	padding-right: 40px !important;
+	opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 600ms, transform 1000ms;
+}
+
+label {
+	padding-bottom: 10px;
+	font-size: 17px;
+}
+
+.normalInput {
+	width: 700px;
+	height: 41px;
+	background-color: #f8f8f8;
+	border: 1px solid #d3d3d3;
+	border-radius:  4px !important;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size: 18px;
+	color: gray;
+	padding-left: 10px;
+}
+
+#directions {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 200px;
+	width: 100%;
+	height: 150px;
+	background-color: #888888;
+}
+
+#dInput {
+	width: 500px;
+	height: 40px;
+	margin-left: 10px;
+	background-color: #f8f8f8;
+	border: 1px solid #d3d3d3;
+	border-radius:  4px;
+	font-size: 18px;
+	color: gray;
+	padding-left: 10px;
+}
+
+#dButton {
+	width: 140px;
+	height: 44px;
+	margin-right: 10px;
+	background-color: #db332f;
+	font-size: 19px;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 3px 0 0 rgba(0,0,0,.05);
+	margin-left: 10px;
+}
+
+#dButton:hover {
+	transform: scale(1.04);
+	background-color: darkred;
+	transition: .2s;
+}
+
+ #map {
+        height: 400px; 
+        width: 500px;  
+}
+
+.normalInput:focus {
+	border: 1px solid #777777;
+	outline: none;
+}
+
+ /* reviews + contact for each page  */
+
+
+
+#contact {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 45%;
+	background-color: #222222;
+	border: 1px solid #555555;
+}
+
+#message {
+	height: 150px;
+}
+#info {
+	display: flex;
+	flex-flow: column nowrap;
+	margin: 20px;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	margin-bottom: 46px;
+}
+
+
+
+#info span {
+	margin: 20px;
+	color: rgb(230,230,230);
+}
+
+ #footer {
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	width: 100%;
+ 	height: 10%;
+ 	background-color: #333333;
+ 	border: 1px solid #333333;
+ }
+
+ #footer p {
+ 	color: #b3b3b3;
+ 	font-size: 14px;
+ }
+
+ #flex-contact {
+ 	display: flex;
+ 	flex-flow: row nowrap;
+ 	justify-content: center;
+ 	position: relative;
+ 	width: 100%;
+ }
+
+ #contact-center {
+ 	position: relative;
+ 	top:115px;
+ }
+
+#find-us {
+	position: relative;
+	top:120px;
+	text-align: center;
+	opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 600ms, transform 1000ms;
+    margin-left: 30px;
+}
+
+#right input {
+	display: none;
+	background-color: transparent;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+	position: absolute;
+	cursor: pointer;
+	top: 15px;
+	right: 25px;
+	z-index: 101;
+}
+
+#menushow {
+	display: flex;
+	flex-flow: column nowrap;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	height: 0vh;
+	width: 0%;
+	background-color: white;
+	z-index: 100;
+	transition: 0.5s;
+	-webkit-box-shadow: 0 0 15px gray;
+    box-shadow: 0 0 15px gray;
+    overflow: scroll;
+}
+
+#menushow a div {
+	padding: 30px;
+	font-size: 20px;
+	text-align: center;
+	-webkit-box-shadow: 0 0 15px gray;
+    box-shadow: 0px 15px 10px -15px #111;
+    text-decoration: none !important;
+}
+
+#X {
+	font-weight: bold;
+	margin: 10px;
+	margin-bottom: 20px;
+	font-size: 22px;
+}
+
+#X:hover {
+	font-size: 23px;
+	color: red;
+}
+
+#right input:hover {
+	transform: scale(1.1);
+	background-color: silver;
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 650px) {
+	#info span {
+		text-align: center !important;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	#flex-contact {
+		flex-flow: column nowrap;
+	}
+	#find-us {
+		margin-top: 10px !important;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	#info span {
+		margin:10px;
+		text-align: left;
+	}
+
+	#right a {
+		display: none;
+	}
+	#right input {
+		display: inline-block;
+	}
+	#right {
+		float: none;
+	}
+}
+@media only screen and (max-width: 1050px) {
+	.normalInput {
+		width: 100%;
+	}
+
+	#contact-center p {
+		width: 100%;
+	}
+
+	form {
+		padding-right: 10px;
+	}
+
+	#find-us {
+		margin-left:20px;
+		margin-top: 45px;
+		margin-right: 20px;
+	}
+}
+@media only screen and (min-width: 1050px) {
+
+	#info {
+		margin: 70px;
+	}
+
+}
+
+@media only screen and (max-width: 1050px) {
+	#contact-center {
+		margin: 25px;
+		margin-top: -40px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	
+	#info span {
+		display: none;
+	}
+	#map {
+		margin-left: -41px;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	#directions {
+		flex-flow: column nowrap;
+	}
+	#dInput {
+		width: 90%;
+		margin-right: 12px;
+	}
+	#dButton {
+		width: 93%;
+		margin-top: 8px;
+	}
+}	
