@@ -1,2 +1,2 @@
 # ZSS
-Zeeland Self Storage
+Zeeland Self Storage.
